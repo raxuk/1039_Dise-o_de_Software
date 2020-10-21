@@ -1,15 +1,18 @@
 package models;
 
 import enums.Directions;
-import main.ICharacter;
+import abstracts.ACharacter;
+import interfaces.ICharacterClass;
+import interfaces.IMount;
+import interfaces.IWeapon;
 
 import java.text.MessageFormat;
 
-public class Character extends ICharacter {
+public class Character extends ACharacter {
     private final String name;
-    private CharacterClass tipo;
-    private Weapon weapon;
-    private Mount mount;
+    private ICharacterClass tipo;
+    private IWeapon weapon;
+    private IMount mount;
 
     public Character(String name) {
         super();
@@ -23,7 +26,7 @@ public class Character extends ICharacter {
      * @param weapon tipo de arma
      */
     @Override
-    public void eligeArma(Weapon weapon) {
+    public void eligeArma(IWeapon weapon) {
         this.weapon = weapon;
     }
 
@@ -41,7 +44,7 @@ public class Character extends ICharacter {
      * @param mount tipo de montura
      */
     @Override
-    public void eligeMontura(Mount mount) {
+    public void eligeMontura(IMount mount) {
         this.mount = mount;
     }
 
@@ -53,7 +56,7 @@ public class Character extends ICharacter {
      */
     @Override
     public void utilizaMontura(int distancia, Directions direction) {
-        float duration = distancia / this.mount.getSpeed();
+        float duration = this.mount.travelDuration(distancia);
         System.out.println(MessageFormat.format("Has viajado {0}m dirección {1} con tu {2}, {3}, en {4} segundos.", distancia, direction.toString(), this.mount.getType().toString(), this.mount.getName(), duration));
     }
 
@@ -63,7 +66,7 @@ public class Character extends ICharacter {
      * @param charClassType clase del personaje
      */
     @Override
-    public void eligeClase(CharacterClass charClassType) {
+    public void eligeClase(ICharacterClass charClassType) {
         this.tipo = charClassType;
     }
 
@@ -76,6 +79,5 @@ public class Character extends ICharacter {
     public void info() {
         System.out.println(MessageFormat.format("{0} {1}", this.name, this.tipo.toString()));
         System.out.println(MessageFormat.format("{0} - {1} - {2} damage", this.weapon.getType().toString(), this.weapon.getName(), this.weapon.getDamage()));
-
     }
 }

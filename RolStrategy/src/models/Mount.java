@@ -31,6 +31,6 @@ public class Mount implements IMount {
 
     @Override
     public float travelDuration(float distance) {
-        return 0;
+        return distance / this.getSpeed();
     }
 }

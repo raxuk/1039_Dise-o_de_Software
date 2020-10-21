@@ -6,6 +6,7 @@
     <node x="1000.5" y="843.0">interfaces.ICharacterClass</node>
     <node x="0.0" y="843.0">enums.Directions</node>
     <node x="353.0" y="214.0">models.Character</node>
+    <node x="353.0" y="0.0">abstracts.ACharacter</node>
     <node x="0.0" y="346.0">main.Warehouse</node>
     <node x="228.0" y="843.0">enums.CharacterClassType</node>
     <node x="632.0" y="170.0">models.Mount</node>
@@ -17,32 +18,31 @@
     <node x="899.0" y="148.0">models.Weapon</node>
     <node x="650.0" y="0.0">interfaces.IMount</node>
     <node x="0.0" y="1120.0">main.RolStrategy</node>
-    <node x="353.0" y="0.0">interfaces.ICharacter</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="models.Weapon" target="interfaces.IWeapon">
-      <point x="0.0" y="-94.0" />
-      <point x="0.0" y="49.0" />
-    </edge>
-    <edge source="models.Character" target="interfaces.ICharacter">
-      <point x="0.0" y="-138.0" />
-      <point x="0.0" y="82.0" />
+    <edge source="main.Warehouse" target="interfaces.IWarehouse">
+      <point x="0.0" y="-226.0" />
+      <point x="0.0" y="148.0" />
     </edge>
     <edge source="models.CharacterClass" target="interfaces.ICharacterClass">
       <point x="0.0" y="-50.0" />
       <point x="0.0" y="27.0" />
     </edge>
-    <edge source="main.Warehouse" target="interfaces.IWarehouse">
-      <point x="0.0" y="-226.0" />
-      <point x="0.0" y="148.0" />
+    <edge source="models.Weapon" target="interfaces.IWeapon">
+      <point x="0.0" y="-94.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="models.Character" target="abstracts.ACharacter">
+      <point x="0.0" y="-138.0" />
+      <point x="0.0" y="82.0" />
     </edge>
     <edge source="models.Mount" target="interfaces.IMount">
       <point x="0.0" y="-105.0" />
       <point x="0.0" y="60.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.46113902847571187" x="541.3685552353691" y="883.8567968368546" />
+  <settings layout="Hierarchic Group" zoom="0.46113902847571187" x="541.0" y="706.4620414093716" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>

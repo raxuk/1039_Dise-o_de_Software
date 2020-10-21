@@ -2,11 +2,11 @@ package main;
 
 import enums.CharacterClassType;
 import enums.Directions;
+import interfaces.ICharacterClass;
+import interfaces.IMount;
 import interfaces.IWarehouse;
+import interfaces.IWeapon;
 import models.Character;
-import models.CharacterClass;
-import models.Mount;
-import models.Weapon;
 
 public class RolStrategy {
 
@@ -14,9 +14,9 @@ public class RolStrategy {
         IWarehouse warehouse = new Warehouse();
         //////////////////////////////////////
         Character character = warehouse.newCharacter("Pepe García López");
-        CharacterClass charClass = warehouse.getCharClass(CharacterClassType.KNIGHT);
-        Weapon weapon = warehouse.getRandomSword();
-        Mount mount = warehouse.getRandomHorse();
+        ICharacterClass charClass = warehouse.getCharClass(CharacterClassType.KNIGHT);
+        IWeapon weapon = warehouse.getRandomSword();
+        IMount mount = warehouse.getRandomHorse();
         //////////////////////////////////////
         character.eligeClase(charClass);
         character.eligeArma(weapon);
