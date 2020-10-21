@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="119.6960784313726" y="0.0">enums.Mount</node>
+    <node x="0.0" y="723.0">models.CharacterClass</node>
+    <node x="150.1127450980392" y="869.0">models.Character</node>
+    <node x="324.3137254901961" y="441.0">models.Weapon</node>
+    <node x="28.14705882352942" y="260.0">interfaces.IMount</node>
+    <node x="258.4460784313726" y="271.0">interfaces.IWeapon</node>
+    <node x="102.14705882352939" y="430.0">models.Mount</node>
+    <node x="207.1470588235294" y="667.0">interfaces.ICharacter</node>
+    <node x="317.4460784313726" y="0.0">enums.Weapon</node>
+    <node x="536.4460784313726" y="0.0">enums.CharacterClass</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interfaces.IWeapon" target="enums.Weapon">
+      <point x="0.0" y="-49.0" />
+      <point x="332.9460784313726" y="235.0" />
+      <point x="346.4460784313726" y="235.0" />
+      <point x="-58.0" y="105.0" />
+    </edge>
+    <edge source="models.Weapon" target="enums.Weapon">
+      <point x="49.66666666666667" y="-82.5" />
+      <point x="448.48039215686276" y="405.0" />
+      <point x="432.1960784313726" y="405.0" />
+      <point x="432.1960784313726" y="235.0" />
+      <point x="462.4460784313726" y="235.0" />
+      <point x="58.0" y="105.0" />
+    </edge>
+    <edge source="models.Mount" target="enums.Mount">
+      <point x="62.0" y="-93.5" />
+      <point x="257.1470588235294" y="405.0" />
+      <point x="235.64705882352942" y="405.0" />
+      <point x="235.64705882352942" y="235.0" />
+      <point x="256.3627450980392" y="235.0" />
+      <point x="54.66666666666663" y="105.0" />
+    </edge>
+    <edge source="models.Character" target="models.Weapon">
+      <point x="80.83333333333337" y="-127.0" />
+      <point x="327.9460784313726" y="849.0" />
+      <point x="423.9166666666667" y="849.0" />
+      <point x="423.9166666666667" y="642.0" />
+      <point x="448.48039215686276" y="642.0" />
+      <point x="49.66666666666667" y="82.5" />
+    </edge>
+    <edge source="models.Character" target="interfaces.ICharacter">
+      <point x="16.166666666666686" y="-127.0" />
+      <point x="263.27941176470586" y="829.0" />
+      <point x="304.1470588235294" y="829.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="interfaces.ICharacter" target="models.Weapon">
+      <point x="48.5" y="-71.0" />
+      <point x="352.6470588235294" y="642.0" />
+      <point x="349.14705882352945" y="642.0" />
+      <point x="-49.66666666666666" y="82.5" />
+    </edge>
+    <edge source="models.Character" target="models.CharacterClass">
+      <point x="-80.83333333333334" y="-127.0" />
+      <point x="166.27941176470586" y="849.0" />
+      <point x="80.0" y="849.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="models.Mount" target="interfaces.IMount">
+      <point x="-62.0" y="-93.5" />
+      <point x="133.1470588235294" y="405.0" />
+      <point x="121.14705882352942" y="405.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="interfaces.IMount" target="enums.Mount">
+      <point x="0.0" y="-60.0" />
+      <point x="121.14705882352942" y="235.0" />
+      <point x="147.0294117647059" y="235.0" />
+      <point x="-54.666666666666686" y="105.0" />
+    </edge>
+    <edge source="models.Character" target="models.Mount">
+      <point x="-16.16666666666663" y="-127.0" />
+      <point x="230.94607843137257" y="829.0" />
+      <point x="181.5" y="829.0" />
+      <point x="181.5" y="642.0" />
+      <point x="195.1470588235294" y="642.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="interfaces.ICharacter" target="models.Mount">
+      <point x="-48.5" y="-71.0" />
+      <point x="255.6470588235294" y="642.0" />
+      <point x="257.1470588235294" y="642.0" />
+      <point x="62.0" y="93.5" />
+    </edge>
+    <edge source="models.Weapon" target="interfaces.IWeapon">
+      <point x="-49.66666666666666" y="-82.5" />
+      <point x="349.14705882352945" y="405.0" />
+      <point x="332.9460784313726" y="405.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5861767279090113" x="371.5" y="551.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

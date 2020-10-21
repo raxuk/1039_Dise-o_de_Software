@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="102.0" y="298.0">Main2</node>
+    <node x="176.0" y="149.0">buttonlamp2.Lamp</node>
+    <node x="113.0" y="0.0">buttonlamp2.IActivable</node>
+    <node x="0.0" y="126.0">buttonlamp2.Button</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="buttonlamp2.Button" target="buttonlamp2.IActivable">
+      <point x="-39.0" y="-61.0" />
+      <point x="39.0" y="96.0" />
+      <point x="129.0" y="96.0" />
+      <point x="-48.0" y="38.0" />
+    </edge>
+    <edge source="Main2" target="buttonlamp2.IActivable">
+      <point x="56.25" y="-27.0" />
+      <point x="233.25" y="278.0" />
+      <point x="308.5" y="278.0" />
+      <point x="308.5" y="96.0" />
+      <point x="225.0" y="96.0" />
+      <point x="48.0" y="38.0" />
+    </edge>
+    <edge source="Main2" target="buttonlamp2.Button">
+      <point x="-56.25" y="-27.0" />
+      <point x="120.75" y="278.0" />
+      <point x="39.0" y="278.0" />
+      <point x="-39.0" y="61.0" />
+    </edge>
+    <edge source="Main2" target="buttonlamp2.Lamp">
+      <point x="18.75" y="-27.0" />
+      <point x="195.75" y="268.0" />
+      <point x="237.0" y="268.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="buttonlamp2.Lamp" target="buttonlamp2.IActivable">
+      <point x="0.0" y="-38.0" />
+      <point x="237.0" y="106.0" />
+      <point x="193.0" y="106.0" />
+      <point x="16.0" y="38.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="339.0" y="95.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

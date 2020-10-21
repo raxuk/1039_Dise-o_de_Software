@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="153.5" y="126.0">buttonlamp3.Button</node>
+    <node x="111.85624999999999" y="424.0">Main3</node>
+    <node x="10.5" y="149.0">buttonlamp3.Lamp</node>
+    <node x="259.4625" y="11.0">buttonlamp3.IClickable</node>
+    <node x="79.0" y="0.0">buttonlamp3.IActivable</node>
+    <node x="63.85624999999999" y="298.0">buttonlamp3.Injector</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Main3" target="buttonlamp3.IActivable">
+      <point x="-56.25" y="-27.0" />
+      <point x="130.60625" y="404.0" />
+      <point x="0.0" y="404.0" />
+      <point x="0.0" y="96.0" />
+      <point x="91.80000000000001" y="96.0" />
+      <point x="-51.19999999999999" y="38.0" />
+    </edge>
+    <edge source="buttonlamp3.Button" target="buttonlamp3.IClickable">
+      <point x="52.0" y="-61.0" />
+      <point x="283.5" y="106.0" />
+      <point x="280.79583333333335" y="106.0" />
+      <point x="-42.666666666666664" y="27.0" />
+    </edge>
+    <edge source="buttonlamp3.Injector" target="buttonlamp3.IClickable">
+      <point x="92.25" y="-38.0" />
+      <point x="279.10625" y="273.0" />
+      <point x="335.8458333333333" y="273.0" />
+      <point x="335.8458333333333" y="106.0" />
+      <point x="323.4625" y="106.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="buttonlamp3.Injector" target="buttonlamp3.Button">
+      <point x="30.75" y="-38.0" />
+      <point x="217.60625" y="273.0" />
+      <point x="231.5" y="273.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="buttonlamp3.Injector" target="buttonlamp3.Lamp">
+      <point x="-92.25" y="-38.0" />
+      <point x="94.60624999999999" y="273.0" />
+      <point x="71.5" y="273.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="Main3" target="buttonlamp3.IClickable">
+      <point x="56.25" y="-27.0" />
+      <point x="243.10625" y="404.0" />
+      <point x="346.8458333333333" y="404.0" />
+      <point x="346.8458333333333" y="106.0" />
+      <point x="366.1291666666666" y="106.0" />
+      <point x="42.66666666666666" y="27.0" />
+    </edge>
+    <edge source="buttonlamp3.Lamp" target="buttonlamp3.IActivable">
+      <point x="0.0" y="-38.0" />
+      <point x="71.5" y="106.0" />
+      <point x="117.4" y="106.0" />
+      <point x="-25.599999999999994" y="38.0" />
+    </edge>
+    <edge source="Main3" target="buttonlamp3.Injector">
+      <point x="18.75" y="-27.0" />
+      <point x="205.60625" y="394.0" />
+      <point x="248.35625" y="394.0" />
+      <point x="61.5" y="38.0" />
+    </edge>
+    <edge source="buttonlamp3.Injector" target="buttonlamp3.IActivable">
+      <point x="-30.75" y="-38.0" />
+      <point x="156.10625" y="273.0" />
+      <point x="143.0" y="273.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="buttonlamp3.Button" target="buttonlamp3.IActivable">
+      <point x="0.0" y="-61.0" />
+      <point x="231.5" y="106.0" />
+      <point x="194.2" y="106.0" />
+      <point x="51.19999999999999" y="38.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="405.7692307692307" y="206.5454545454545" />
+  <SelectedNodes>
+    <node>buttonlamp3.IClickable</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
