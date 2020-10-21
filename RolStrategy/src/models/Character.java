@@ -1,18 +1,18 @@
 package models;
 
-import enums.CharacterClassType;
 import enums.Directions;
-import interfaces.ICharacter;
+import main.ICharacter;
 
 import java.text.MessageFormat;
 
-public class Character implements ICharacter {
+public class Character extends ICharacter {
     private final String name;
     private CharacterClass tipo;
     private Weapon weapon;
     private Mount mount;
 
     public Character(String name) {
+        super();
         this.name = name;
     }
 
@@ -33,7 +33,6 @@ public class Character implements ICharacter {
     @Override
     public void utilizaArma() {
         System.out.println(MessageFormat.format("Has hecho {0} de daño con tu {1}, {2}.", this.weapon.getDamage(), this.weapon.getType().toString(), this.weapon.getName()));
-
     }
 
     /**
