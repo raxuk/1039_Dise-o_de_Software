@@ -3,135 +3,47 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="-594.5990054825959" y="458.82213438735175">interfaces.ICharacterClass</node>
-    <node x="367.3692484856581" y="-45.17786561264825">enums.Directions</node>
-    <node x="-146.38075151434197" y="836.8221343873518">models.Character</node>
-    <node x="-487.8886880222784" y="167.82213438735175">enums.CharacterClassType</node>
-    <node x="78.36924848565809" y="380.82213438735175">models.Mount</node>
-    <node x="-253.88868802227842" y="201.82213438735175">interfaces.IWeapon</node>
-    <node x="-165.38868802227842" y="-45.17786561264825">enums.WeaponType</node>
-    <node x="-462.2497991333896" y="670.3221343873518">models.CharacterClass</node>
-    <node x="90.08353419994376" y="-45.17786561264825">enums.MountType</node>
-    <node x="-201.63075151434197" y="391.82213438735175">models.Weapon</node>
-    <node x="-14.249799133389615" y="190.82213438735175">interfaces.IMount</node>
-    <node x="-48.599005482595885" y="637.8221343873518">interfaces.ICharacter</node>
+    <node x="1000.5" y="843.0">interfaces.ICharacterClass</node>
+    <node x="0.0" y="843.0">enums.Directions</node>
+    <node x="353.0" y="214.0">models.Character</node>
+    <node x="0.0" y="346.0">main.Warehouse</node>
+    <node x="228.0" y="843.0">enums.CharacterClassType</node>
+    <node x="632.0" y="170.0">models.Mount</node>
+    <node x="933.0" y="0.0">interfaces.IWeapon</node>
+    <node x="0.0" y="0.0">interfaces.IWarehouse</node>
+    <node x="505.0" y="843.0">enums.WeaponType</node>
+    <node x="984.0" y="947.0">models.CharacterClass</node>
+    <node x="750.0" y="843.0">enums.MountType</node>
+    <node x="899.0" y="148.0">models.Weapon</node>
+    <node x="650.0" y="0.0">interfaces.IMount</node>
+    <node x="0.0" y="1120.0">main.RolStrategy</node>
+    <node x="353.0" y="0.0">interfaces.ICharacter</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="interfaces.IWeapon" target="enums.WeaponType">
-      <point x="0.0" y="-47.5" />
-      <point x="436.21031746031747" y="188.0" />
-      <point x="459.21031746031747" y="188.0" />
-      <point x="-60.0" y="81.5" />
-    </edge>
-    <edge source="models.Weapon" target="enums.WeaponType">
-      <point x="5.6843418860808015E-14" y="-92.5" />
-      <point x="522.968253968254" y="401.0" />
-      <point x="542.2103174603175" y="401.0" />
-      <point x="542.2103174603175" y="188.0" />
-      <point x="519.2103174603175" y="188.0" />
-      <point x="0.0" y="81.5" />
-    </edge>
-    <edge source="models.Character" target="models.Weapon">
-      <point x="-17.83333333333337" y="-125.5" />
-      <point x="537.3849206349206" y="842.0" />
-      <point x="498.015873015873" y="842.0" />
-      <point x="498.015873015873" y="658.0" />
-      <point x="522.968253968254" y="658.0" />
-      <point x="0.0" y="92.5" />
+    <edge source="models.Weapon" target="interfaces.IWeapon">
+      <point x="0.0" y="-94.0" />
+      <point x="0.0" y="49.0" />
     </edge>
     <edge source="models.Character" target="interfaces.ICharacter">
-      <point x="17.833333333333314" y="-125.5" />
-      <point x="573.0515873015872" y="842.0" />
-      <point x="653.0" y="842.0" />
-      <point x="0.0" y="69.5" />
+      <point x="0.0" y="-138.0" />
+      <point x="0.0" y="82.0" />
     </edge>
     <edge source="models.CharacterClass" target="interfaces.ICharacterClass">
-      <point x="-75.0" y="-37.0" />
-      <point x="169.84920634920627" y="658.0" />
-      <point x="112.5" y="658.0" />
-      <point x="0.0" y="25.5" />
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="27.0" />
     </edge>
-    <edge source="models.CharacterClass" target="enums.CharacterClassType">
-      <point x="0.0" y="-37.0" />
-      <point x="244.84920634920627" y="658.0" />
-      <point x="235.5" y="658.0" />
-      <point x="235.5" y="401.0" />
-      <point x="213.71031746031747" y="401.0" />
-      <point x="0.0" y="81.5" />
-    </edge>
-    <edge source="interfaces.ICharacter" target="models.Weapon">
-      <point x="-53.5" y="-69.5" />
-      <point x="599.5" y="658.0" />
-      <point x="609.6349206349206" y="658.0" />
-      <point x="86.66666666666669" y="92.5" />
-    </edge>
-    <edge source="models.Character" target="models.CharacterClass">
-      <point x="-89.16666666666663" y="-125.5" />
-      <point x="466.0515873015873" y="862.0" />
-      <point x="244.84920634920627" y="862.0" />
-      <point x="0.0" y="37.0" />
-    </edge>
-    <edge source="interfaces.ICharacter" target="models.Mount">
-      <point x="53.5" y="-69.5" />
-      <point x="706.5" y="658.0" />
-      <point x="713.6349206349206" y="658.0" />
-      <point x="-81.33333333333333" y="103.5" />
-    </edge>
-    <edge source="models.Character" target="models.Mount">
-      <point x="53.5" y="-125.5" />
-      <point x="608.718253968254" y="852.0" />
-      <point x="805.1944444444445" y="852.0" />
-      <point x="805.1944444444445" y="658.0" />
-      <point x="794.968253968254" y="658.0" />
-      <point x="0.0" y="103.5" />
+    <edge source="main.Warehouse" target="interfaces.IWarehouse">
+      <point x="0.0" y="-226.0" />
+      <point x="0.0" y="148.0" />
     </edge>
     <edge source="models.Mount" target="interfaces.IMount">
-      <point x="-81.33333333333331" y="-103.5" />
-      <point x="713.6349206349206" y="401.0" />
-      <point x="681.8492063492063" y="401.0" />
-      <point x="0.0" y="58.5" />
-    </edge>
-    <edge source="interfaces.IMount" target="enums.MountType">
-      <point x="0.0" y="-58.5" />
-      <point x="681.8492063492063" y="188.0" />
-      <point x="713.3492063492063" y="188.0" />
-      <point x="-57.33333333333334" y="81.5" />
-    </edge>
-    <edge source="models.Weapon" target="interfaces.IWeapon">
-      <point x="-86.66666666666663" y="-92.5" />
-      <point x="0.0" y="47.5" />
-    </edge>
-    <edge source="models.Mount" target="enums.MountType">
-      <point x="0.0" y="-103.5" />
-      <point x="794.968253968254" y="401.0" />
-      <point x="811.5436507936507" y="401.0" />
-      <point x="811.5436507936507" y="188.0" />
-      <point x="770.6825396825396" y="188.0" />
-      <point x="0.0" y="81.5" />
-    </edge>
-    <edge source="interfaces.ICharacterClass" target="enums.CharacterClassType">
-      <point x="0.0" y="-25.5" />
-      <point x="112.5" y="401.0" />
-      <point x="142.3769841269841" y="401.0" />
-      <point x="-71.33333333333337" y="81.5" />
+      <point x="0.0" y="-105.0" />
+      <point x="0.0" y="60.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.6861767279090114" x="159.72701772281005" y="515.3969899540048" />
-  <SelectedNodes>
-    <node>interfaces.ICharacterClass</node>
-    <node>enums.Directions</node>
-    <node>enums.WeaponType</node>
-    <node>models.Character</node>
-    <node>models.CharacterClass</node>
-    <node>enums.MountType</node>
-    <node>models.Weapon</node>
-    <node>interfaces.IMount</node>
-    <node>enums.CharacterClassType</node>
-    <node>models.Mount</node>
-    <node>interfaces.IWeapon</node>
-    <node>interfaces.ICharacter</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="0.46113902847571187" x="541.3685552353691" y="883.8567968368546" />
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

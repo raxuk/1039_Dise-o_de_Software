@@ -4,6 +4,7 @@ import enums.CharacterClassType;
 import enums.MountType;
 import enums.WeaponType;
 import interfaces.IWarehouse;
+import models.Character;
 import models.CharacterClass;
 import models.Mount;
 import models.Weapon;
@@ -13,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
-public class warehouse implements IWarehouse {
+public class Warehouse implements IWarehouse {
     private HashMap<String, Float> swords;
     private HashMap<String, Float> bows;
     private HashMap<CharacterClassType, Float> disarmed;
@@ -22,9 +23,9 @@ public class warehouse implements IWarehouse {
     private HashMap<String, Float> dragons;
     private HashMap<CharacterClassType, Float> noMount;
 
-    public warehouse() {
+    public Warehouse() {
         this.swords = new HashMap<String, Float>() {{
-            put("Cercenadora siniestra de El Jinete", 6.76f);
+            put("Cercenadora siniestra de El Jinete", 14.76f);
             put("Hoja oscura del arrepentido", 32f);
             put("Espada de Gladiador pecaminoso", 34.4f);
             put("Derrama sangre", 23.75f);
@@ -48,27 +49,27 @@ public class warehouse implements IWarehouse {
         }};
 
         this.horses = new HashMap<String, Float>() {{
-            put("Riendas del destrero de la muerte carmesí", 30f);
-            put("Yegua resucitada", 35f);
-            put("Palomino presto", 28.6f);
-            put("Caballo de montaña", 25f);
-            put("Desterro de la muerte de Acherus", 45f);
-            put("Caballo de guerra de la alianza", 25f);
+            put("Riendas del destrero de la muerte carmesí", 10f);
+            put("Yegua resucitada", 28f);
+            put("Palomino presto", 17f);
+            put("Caballo de montaña", 15f);
+            put("Desterro de la muerte de Acherus", 20f);
+            put("Caballo de guerra de la alianza", 12f);
         }};
 
         this.dragons = new HashMap<String, Float>() {{
-            put("Draco del Viento del Norte", 45.2f);
-            put("Draco llameante", 46.1f);
-            put("Draco vil", 46.5f);
-            put("Draco de piedra Fosforescente", 43.8f);
-            put("Presagista Crepuscular", 46.5f);
-            put("Ultraxion", 55.5f);
+            put("Draco del Viento del Norte", 35.2f);
+            put("Draco llameante", 36.1f);
+            put("Draco vil", 36.5f);
+            put("Draco de piedra Fosforescente", 33.8f);
+            put("Presagista Crepuscular", 36.5f);
+            put("Ultraxion", 35.5f);
         }};
 
         this.noMount = new HashMap<CharacterClassType, Float>() {{
-            put(CharacterClassType.KNIGHT, 10f);
-            put(CharacterClassType.SOLDIER, 8f);
-            put(CharacterClassType.WIZARD, 6f);
+            put(CharacterClassType.KNIGHT, 2.5f);
+            put(CharacterClassType.SOLDIER, 2f);
+            put(CharacterClassType.WIZARD, 1.6f);
         }};
     }
 
@@ -136,5 +137,15 @@ public class warehouse implements IWarehouse {
     public Mount getDragon(String dragonName) {
         float speed = this.dragons.get(dragonName);
         return new Mount(MountType.DRAGON, dragonName, speed);
+    }
+
+    @Override
+    public CharacterClass getCharClass(CharacterClassType classType) {
+        return new CharacterClass(classType);
+    }
+
+    @Override
+    public Character newCharacter(String name) {
+        return new Character(name);
     }
 }

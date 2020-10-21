@@ -1,7 +1,7 @@
 package enums;
 
 public enum MountType {
-    HORSE("Horse"),
+    HORSE("Caballo"),
     DRAGON("Dragón"),
     NOMOUNT("Sin montura");
 

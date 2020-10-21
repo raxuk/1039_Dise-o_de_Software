@@ -4,9 +4,9 @@ import enums.MountType;
 import interfaces.IMount;
 
 public class Mount implements IMount {
-    private MountType type;
-    private String name;
-    private float speed;
+    private final MountType type;
+    private final String name;
+    private final float speed;
 
     public Mount(MountType type, String name, float speed) {
         this.type = type;

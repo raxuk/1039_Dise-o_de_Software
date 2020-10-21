@@ -4,9 +4,9 @@ import enums.WeaponType;
 import interfaces.IWeapon;
 
 public class Weapon implements IWeapon {
-    private WeaponType type;
-    private String name;
-    private float damage;
+    private final WeaponType type;
+    private final String name;
+    private final float damage;
 
     public Weapon(WeaponType type, String name, float damage) {
         this.type = type;

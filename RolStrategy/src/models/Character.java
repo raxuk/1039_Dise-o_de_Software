@@ -1,11 +1,13 @@
 package models;
 
+import enums.CharacterClassType;
+import enums.Directions;
 import interfaces.ICharacter;
 
 import java.text.MessageFormat;
 
 public class Character implements ICharacter {
-    private String name;
+    private final String name;
     private CharacterClass tipo;
     private Weapon weapon;
     private Mount mount;
@@ -30,7 +32,7 @@ public class Character implements ICharacter {
      */
     @Override
     public void utilizaArma() {
-        System.out.println(MessageFormat.format("{0} - {1} - {2} damage", this.weapon.getType(), this.weapon.getName(), this.weapon.getDamage()));
+        System.out.println(MessageFormat.format("Has hecho {0} de daño con tu {1}, {2}.", this.weapon.getDamage(), this.weapon.getType().toString(), this.weapon.getName()));
 
     }
 
@@ -48,11 +50,22 @@ public class Character implements ICharacter {
      * Muestra un mensaje indicando el tipo de montura, la dirección y la duración del viaje
      *
      * @param distancia cantidad de distancia en metros
-     * @param direccion dirección en numero (0 - norte, 1 - este, 2 - sur, 3 - oeste)
+     * @param direction dirección del viaje
      */
     @Override
-    public void utilizaMontura(int distancia, int direccion) {
-        System.out.println("muestra un mensaje indicando el tipo de montura, la dirección y la duración del viaje");
+    public void utilizaMontura(int distancia, Directions direction) {
+        float duration = distancia / this.mount.getSpeed();
+        System.out.println(MessageFormat.format("Has viajado {0}m dirección {1} con tu {2}, {3}, en {4} segundos.", distancia, direction.toString(), this.mount.getType().toString(), this.mount.getName(), duration));
+    }
+
+    /**
+     * El personaje elige una clase o la cambia
+     *
+     * @param charClassType clase del personaje
+     */
+    @Override
+    public void eligeClase(CharacterClass charClassType) {
+        this.tipo = charClassType;
     }
 
     /**
@@ -63,7 +76,7 @@ public class Character implements ICharacter {
     @Override
     public void info() {
         System.out.println(MessageFormat.format("{0} {1}", this.name, this.tipo.toString()));
-        System.out.println(MessageFormat.format("{0} - {1} - {2} damage", this.weapon.getType(), this.weapon.getName(), this.weapon.getDamage()));
+        System.out.println(MessageFormat.format("{0} - {1} - {2} damage", this.weapon.getType().toString(), this.weapon.getName(), this.weapon.getDamage()));
 
     }
 }

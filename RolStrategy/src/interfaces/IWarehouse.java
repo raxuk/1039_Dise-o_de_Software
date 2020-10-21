@@ -1,6 +1,8 @@
 package interfaces;
 
 import enums.CharacterClassType;
+import models.Character;
+import models.CharacterClass;
 import models.Mount;
 import models.Weapon;
 
@@ -18,4 +20,8 @@ public interface IWarehouse {
 
     Mount getHorse(String horseName);
     Mount getDragon(String dragonName);
+
+    CharacterClass getCharClass(CharacterClassType classType);
+
+    Character newCharacter(String name);
 }
