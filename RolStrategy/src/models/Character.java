@@ -5,10 +5,10 @@ import interfaces.ICharacter;
 import java.text.MessageFormat;
 
 public class Character implements ICharacter {
-    String name;
-    CharacterClass tipo;
-    Weapon weapon;
-    Mount mount;
+    private String name;
+    private CharacterClass tipo;
+    private Weapon weapon;
+    private Mount mount;
 
     public Character(String name) {
         this.name = name;
@@ -30,7 +30,7 @@ public class Character implements ICharacter {
      */
     @Override
     public void utilizaArma() {
-        System.out.println("");
+        System.out.println(MessageFormat.format("{0} - {1} - {2} damage", this.weapon.getType(), this.weapon.getName(), this.weapon.getDamage()));
 
     }
 
@@ -63,7 +63,7 @@ public class Character implements ICharacter {
     @Override
     public void info() {
         System.out.println(MessageFormat.format("{0} {1}", this.name, this.tipo.toString()));
-        System.out.println(MessageFormat.format("{0} {1} {2} damage", this.weapon.getType(), this.weapon.getName(), this.weapon.getDamage()));
+        System.out.println(MessageFormat.format("{0} - {1} - {2} damage", this.weapon.getType(), this.weapon.getName(), this.weapon.getDamage()));
 
     }
 }

@@ -1,13 +1,13 @@
 package enums;
 
-public enum Mount {
+public enum MountType {
     HORSE("Horse"),
     DRAGON("Dragón"),
     NOMOUNT("Sin montura");
 
     private final String mountType;
 
-    Mount(final String mountType) {
+    MountType(final String mountType) {
         this.mountType = mountType;
     }
 

@@ -1,13 +1,13 @@
 package enums;
 
-public enum CharacterClass {
+public enum CharacterClassType {
     SOLDIER("Soldado"),
     KNIGHT("Caballero"),
     WIZARD("Mago");
 
     private final String classType;
 
-    CharacterClass(final String classType) {
+    CharacterClassType(final String classType) {
         this.classType = classType;
     }
 

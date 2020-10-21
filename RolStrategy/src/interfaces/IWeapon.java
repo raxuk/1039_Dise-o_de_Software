@@ -1,9 +1,9 @@
 package interfaces;
 
-import enums.Weapon;
+import enums.WeaponType;
 
 public interface IWeapon {
-    Weapon getType();
+    WeaponType getType();
     String getName();
     float getDamage();
 }

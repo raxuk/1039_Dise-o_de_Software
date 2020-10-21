@@ -1,25 +1,32 @@
 package models;
 
+import enums.MountType;
 import interfaces.IMount;
 
 public class Mount implements IMount {
-    enums.Mount type;
-    String name;
-    String speed;
+    private MountType type;
+    private String name;
+    private float speed;
+
+    public Mount(MountType type, String name, float speed) {
+        this.type = type;
+        this.name = name;
+        this.speed = speed;
+    }
 
     @Override
-    public enums.Mount getType() {
-        return null;
+    public MountType getType() {
+        return type;
     }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public float getSpeed() {
-        return 0;
+        return speed;
     }
 
     @Override

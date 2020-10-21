@@ -1,9 +1,9 @@
 package interfaces;
 
-import enums.Mount;
+import enums.MountType;
 
 public interface IMount {
-    Mount getType();
+    MountType getType();
     String getName();
     float getSpeed();
     float travelDuration(float distance);

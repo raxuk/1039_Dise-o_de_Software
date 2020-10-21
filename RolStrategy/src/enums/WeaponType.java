@@ -1,13 +1,13 @@
 package enums;
 
-public enum Weapon {
+public enum WeaponType {
     SWORD("Espada"),
     BOW("Arco"),
     DISARMED("Desarmado");
 
     private final String weaponName;
 
-    Weapon(final String weaponName) {
+    WeaponType(final String weaponName) {
         this.weaponName = weaponName;
     }
 
