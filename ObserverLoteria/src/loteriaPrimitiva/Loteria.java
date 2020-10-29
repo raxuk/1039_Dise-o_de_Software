@@ -4,13 +4,13 @@ import jugador.IJugador;
 import utils.GeneradorNumeroLoteria;
 
 import java.util.ArrayList;
-import java.util.TreeSet;
+import java.util.HashSet;
 
 public class Loteria implements ILoteria {
     ArrayList<IJugador> jugadores;
 
     public Loteria() {
-        this.jugadores = new ArrayList<IJugador>();
+        this.jugadores = new ArrayList<>();
     }
 
     @Override
@@ -25,7 +25,7 @@ public class Loteria implements ILoteria {
 
     @Override
     public void nuevoSorteo() {
-        TreeSet<Integer> numeroGanador = GeneradorNumeroLoteria.generarNumero();
+        HashSet<Integer> numeroGanador = GeneradorNumeroLoteria.generarNumero();
         for (IJugador jugador : jugadores){
             jugador.numeroAciertos(numeroGanador);
         }

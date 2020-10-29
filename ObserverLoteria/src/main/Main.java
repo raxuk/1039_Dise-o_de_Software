@@ -15,7 +15,6 @@ public class Main {
         //////////////////////////////////////////////////////////
         ILoteria loteria = new Loteria();
         //////////////////////////////////////////////////////////
-        ArrayList<IJugador> jugadores = new ArrayList<IJugador>();
         for (int i = 0; i < numeroJugadores; i++) {
             IJugador j = new Jugador("jugador_" + i, GeneradorNumeroLoteria.generarNumero());
             loteria.registerJugador(j);

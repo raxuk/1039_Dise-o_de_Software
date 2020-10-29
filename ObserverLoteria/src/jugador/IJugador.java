@@ -1,7 +1,7 @@
 package jugador;
 
-import java.util.TreeSet;
+import java.util.HashSet;
 
 public interface IJugador {
-    void numeroAciertos(TreeSet<Integer> numerosGanadores);
+    void numeroAciertos(HashSet<Integer> numerosGanadores);
 }

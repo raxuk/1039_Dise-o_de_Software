@@ -1,19 +1,19 @@
 package jugador;
 
 import java.text.MessageFormat;
-import java.util.TreeSet;
+import java.util.HashSet;
 
 public class Jugador implements IJugador {
     private final String nombre;
-    private final TreeSet<Integer> numerosJugados;
+    private final HashSet<Integer> numerosJugados;
 
-    public Jugador(String nombre, TreeSet<Integer> numerosJugados) {
+    public Jugador(String nombre, HashSet<Integer> numerosJugados) {
         this.nombre = nombre;
         this.numerosJugados = numerosJugados;
     }
 
     @Override
-    public void numeroAciertos(TreeSet<Integer> numerosGanadores) {
+    public void numeroAciertos(HashSet<Integer> numerosGanadores) {
         int aciertos = 0;
 
         for (Integer numerosJugado : numerosJugados) {

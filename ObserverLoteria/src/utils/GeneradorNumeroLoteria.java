@@ -1,22 +1,23 @@
 package utils;
 
 import java.util.Random;
-import java.util.TreeSet;
+import java.util.HashSet;
 
 public class GeneradorNumeroLoteria {
 
-    public static TreeSet<Integer> generarNumero() {
+    public static HashSet<Integer> generarNumero() {
         int longitudLoteria = 6;
 
-        TreeSet<Integer> numerosGanadores = new TreeSet<Integer>();
+        HashSet<Integer> numerosGanadores = new HashSet<>();
 
         Random r = new Random();
         int min = 1;
         int max = 49;
 
-        for (int i = 0; i < longitudLoteria; i++) {
+        while (numerosGanadores.size() < longitudLoteria) {
             numerosGanadores.add(r.nextInt(max - min) + min);
         }
 
         return numerosGanadores;
-    }}
+    }
+}
