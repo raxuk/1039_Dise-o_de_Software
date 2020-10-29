@@ -23,5 +23,5 @@ public interface IWarehouse {
 
     CharacterClass getCharClass(CharacterClassType classType);
 
-    Character newCharacter(String name);
+    Character newCharacter(String name, CharacterClassType type);
 }

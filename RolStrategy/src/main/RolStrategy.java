@@ -13,12 +13,11 @@ public class RolStrategy {
     public static void main(String[] args) {
         IWarehouse warehouse = new Warehouse();
         //////////////////////////////////////
-        Character character = warehouse.newCharacter("Pepe García López");
-        ICharacterClass charClass = warehouse.getCharClass(CharacterClassType.KNIGHT);
+        String name = "Pepe García López";
+        Character character = warehouse.newCharacter(name, CharacterClassType.KNIGHT);
         IWeapon weapon = warehouse.getRandomSword();
         IMount mount = warehouse.getRandomHorse();
         //////////////////////////////////////
-        character.eligeClase(charClass);
         character.eligeArma(weapon);
         character.eligeMontura(mount);
         //////////////////////////////////////

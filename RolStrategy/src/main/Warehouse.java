@@ -3,6 +3,7 @@ package main;
 import enums.CharacterClassType;
 import enums.MountType;
 import enums.WeaponType;
+import interfaces.ICharacterClass;
 import interfaces.IWarehouse;
 import models.Character;
 import models.CharacterClass;
@@ -15,6 +16,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Warehouse implements IWarehouse {
+    private HashMap<String, Character> characters;
+
     private HashMap<String, Float> swords;
     private HashMap<String, Float> bows;
     private HashMap<CharacterClassType, Float> disarmed;
@@ -24,6 +27,7 @@ public class Warehouse implements IWarehouse {
     private HashMap<CharacterClassType, Float> noMount;
 
     public Warehouse() {
+        this.characters = new HashMap<String, Character>();
         this.swords = new HashMap<String, Float>() {{
             put("Cercenadora siniestra de El Jinete", 14.76f);
             put("Hoja oscura del arrepentido", 32f);
@@ -145,7 +149,10 @@ public class Warehouse implements IWarehouse {
     }
 
     @Override
-    public Character newCharacter(String name) {
-        return new Character(name);
+    public Character newCharacter(String name, CharacterClassType type) {
+        Character character =new Character(name);
+        character.eligeClase(this.getCharClass(type));
+        this.characters.put(name, character);
+        return character;
     }
 }
