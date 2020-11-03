@@ -1,15 +1,28 @@
 package jugador;
 
+import periodico.IPeriodico;
+
 import java.text.MessageFormat;
 import java.util.HashSet;
 
 public class Jugador implements IJugador {
     private final String nombre;
     private final HashSet<Integer> numerosJugados;
+    private 
 
     public Jugador(String nombre, HashSet<Integer> numerosJugados) {
         this.nombre = nombre;
         this.numerosJugados = numerosJugados;
+    }
+
+    @Override
+    public void registerPeriodico(IPeriodico periodico) {
+
+    }
+
+    @Override
+    public void removePeriodico(IPeriodico periodico) {
+
     }
 
     @Override
