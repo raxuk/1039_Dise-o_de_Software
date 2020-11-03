@@ -1,47 +1,48 @@
 package loteriaPrimitiva;
 
-import jugador.IJugador;
-import periodico.IPeriodico;
+import jugador.ISubjectJugador;
+import jugador.Jugador;
+import periodico.ISubjectPeriodico;
+import periodico.Periodico;
 import utils.GeneradorNumeroLoteria;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class Loteria implements ILoteria {
+public class Loteria implements ISubjectJugador, ISubjectPeriodico {
     private HashSet<Integer> numeroGanador;
-    private ArrayList<IJugador> jugadores;
-    private IPeriodico periodico;
+    private ArrayList<Jugador> jugadores;
+    private Periodico periodico;
 
     public Loteria() {
         this.jugadores = new ArrayList<>();
     }
 
     @Override
-    public void registerJugador(IJugador jugador) {
+    public void registerJugador(Jugador jugador) {
         this.jugadores.add(jugador);
     }
 
     @Override
-    public void removeJugador(IJugador jugador) {
+    public void removeJugador(Jugador jugador) {
         this.jugadores.remove(jugador);
     }
 
     @Override
-    public void registerPeriodico(IPeriodico periodico) {
+    public void registerPeriodico(Periodico periodico) {
         this.periodico = periodico;
     }
 
     @Override
-    public void removePeriodico(IPeriodico periodico) {
-        this.periodico =  null;
+    public void removePeriodico(Periodico periodico) {
+        this.periodico = null;
     }
 
-    @Override
     public void nuevoSorteo() {
         this.numeroGanador = GeneradorNumeroLoteria.generarNumero();
-        this.periodico.numeroGanador(this.numeroGanador);
-        for (IJugador jugador : jugadores){
-            jugador.numeroAciertos(numeroGanador);
+        this.periodico.numerosGanadores(this.numeroGanador);
+        for (Jugador jugador : jugadores) {
+            jugador.numerosGanadores(numeroGanador);
         }
     }
 }

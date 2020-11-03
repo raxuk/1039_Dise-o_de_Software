@@ -1,14 +1,16 @@
 package jugador;
 
-import periodico.IPeriodico;
+import loteriaPrimitiva.IObserverLoteria;
+import periodico.ISubjectPeriodico;
+import periodico.Periodico;
 
 import java.text.MessageFormat;
 import java.util.HashSet;
 
-public class Jugador implements IJugador {
+public class Jugador implements IObserverLoteria, ISubjectPeriodico {
     private final String nombre;
     private final HashSet<Integer> numerosJugados;
-    private IPeriodico periodico;
+    private Periodico periodico;
     private int aciertos;
 
     public Jugador(String nombre, HashSet<Integer> numerosJugados) {
@@ -17,17 +19,17 @@ public class Jugador implements IJugador {
     }
 
     @Override
-    public void registerPeriodico(IPeriodico periodico) {
+    public void registerPeriodico(Periodico periodico) {
         this.periodico = periodico;
     }
 
     @Override
-    public void removePeriodico(IPeriodico periodico) {
+    public void removePeriodico(Periodico periodico) {
         this.periodico = null;
     }
 
     @Override
-    public void numeroAciertos(HashSet<Integer> numerosGanadores) {
+    public void numerosGanadores(HashSet<Integer> numerosGanadores) {
         this.aciertos = 0;
 
         for (Integer numerosJugado : numerosJugados) {
