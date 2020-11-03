@@ -5,6 +5,9 @@ import java.util.HashSet;
 
 public class GeneradorNumeroLoteria {
 
+    /** Genera un numero de loteria
+     * @return un hashset con seis numeros de loteria
+     */
     public static HashSet<Integer> generarNumero() {
         int longitudLoteria = 6;
 

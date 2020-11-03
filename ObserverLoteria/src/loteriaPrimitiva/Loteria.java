@@ -38,6 +38,9 @@ public class Loteria implements ISubjectJugador, ISubjectPeriodico {
         this.periodico = null;
     }
 
+    /**
+     * Genera un nuevo numero ganador de loteria y anunca a los jugadores el numero
+     */
     public void nuevoSorteo() {
         this.numeroGanador = GeneradorNumeroLoteria.generarNumero();
         this.periodico.numerosGanadores(this.numeroGanador);

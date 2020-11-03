@@ -41,6 +41,9 @@ public class Jugador implements IObserverLoteria, ISubjectPeriodico {
 //        display();
     }
 
+    /**
+     * Imprimir por pantalla el nombre del jugador y los aciertos
+     */
     private void display() {
         System.out.println(MessageFormat.format("Jugador: {0} \t Número de aciertos: {1}", this.nombre, this.aciertos));
     }

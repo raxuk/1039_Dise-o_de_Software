@@ -22,6 +22,9 @@ public class Periodico implements IObserverJugador, IObserverLoteria {
         this.numeroAciertos[aciertos] += 1;
     }
 
+    /**
+     * Muestra el número ganador de la loteria y el número de acertantes
+     */
     public void show() {
         System.out.println(MessageFormat.format("Números ganadores del sorteo: {0} \nNúmero de aciertantes de: \n \t3 números: {1} \n \t4 números: {2} \n \t5 números: {3} \n \t6 números: {4} ", this.numeroGanador, this.numeroAciertos[3], this.numeroAciertos[4], this.numeroAciertos[5], this.numeroAciertos[6]));
     }
