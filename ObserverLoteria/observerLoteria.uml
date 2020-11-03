@@ -3,129 +3,75 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="491.25" y="99.0">periodico.Periodico</node>
-    <node x="215.0" y="99.0">jugador.IJugador</node>
-    <node x="380.25" y="178.0">jugador.Jugador</node>
-    <node x="168.25" y="257.0">loteriaPrimitiva.Loteria</node>
-    <node x="0.0" y="178.0">utils.GeneradorNumeroLoteria</node>
-    <node x="301.0" y="346.0">main.Main</node>
-    <node x="342.67314814814824" y="0.0">periodico.IPeriodico</node>
-    <node x="273.25" y="178.0">loteriaPrimitiva.ILoteria</node>
+    <node x="153.2357142857143" y="0.0">periodico.Periodico</node>
+    <node x="36.49999999999994" y="213.0">jugador.Jugador</node>
+    <node x="220.49999999999997" y="493.0">loteriaPrimitiva.Loteria</node>
+    <node x="368.5" y="302.0">utils.GeneradorNumeroLoteria</node>
+    <node x="200.24999999999994" y="783.0">main.Main</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="main.Main" target="loteriaPrimitiva.ILoteria">
-      <point x="0.0" y="-14.5" />
-      <point x="21.75" y="14.5" />
-    </edge>
-    <edge source="loteriaPrimitiva.Loteria" target="jugador.IJugador">
-      <point x="7.0" y="-14.5" />
-      <point x="217.87189153439155" y="158.0" />
-      <point x="224.3" y="158.0" />
-      <point x="-37.19999999999999" y="14.5" />
-    </edge>
     <edge source="main.Main" target="jugador.Jugador">
-      <point x="10.714285714285722" y="-14.5" />
-      <point x="349.2142857142857" y="306.0" />
-      <point x="425.25" y="306.0" />
-      <point x="0.0" y="14.5" />
-    </edge>
-    <edge source="periodico.Periodico" target="periodico.IPeriodico">
-      <point x="0.0" y="-14.5" />
-      <point x="540.25" y="49.0" />
-      <point x="437.36064814814824" y="49.0" />
-      <point x="44.1875" y="14.5" />
-    </edge>
-    <edge source="loteriaPrimitiva.ILoteria" target="jugador.IJugador">
-      <point x="-21.75" y="-14.5" />
-      <point x="295.0" y="158.0" />
-      <point x="280.1" y="158.0" />
-      <point x="18.600000000000023" y="14.5" />
-    </edge>
-    <edge source="loteriaPrimitiva.Loteria" target="periodico.IPeriodico">
-      <point x="-7.0" y="-14.5" />
-      <point x="203.25" y="232.0" />
-      <point x="204.5" y="232.0" />
-      <point x="204.5" y="59.0" />
-      <point x="361.61064814814824" y="59.0" />
-      <point x="-31.5625" y="14.5" />
+      <point x="-47.714285714285666" y="-26.0" />
+      <point x="236.03571428571428" y="753.0" />
+      <point x="104.14005102040818" y="753.0" />
+      <point x="104.14005102040818" y="468.0" />
+      <point x="73.99999999999994" y="468.0" />
+      <point x="-112.5" y="115.0" />
     </edge>
     <edge source="main.Main" target="periodico.Periodico">
-      <point x="32.14285714285711" y="-14.5" />
-      <point x="370.6428571428571" y="326.0" />
-      <point x="540.25" y="326.0" />
-      <point x="0.0" y="14.5" />
+      <point x="71.57142857142856" y="-26.0" />
+      <point x="355.3214285714285" y="763.0" />
+      <point x="637.0" y="763.0" />
+      <point x="637.0" y="193.0" />
+      <point x="428.23571428571427" y="193.0" />
+      <point x="125.0" y="81.5" />
     </edge>
-    <edge source="jugador.Jugador" target="periodico.IPeriodico">
-      <point x="0.0" y="-14.5" />
-      <point x="425.25" y="158.0" />
-      <point x="432.92625661375666" y="158.0" />
-      <point x="432.92625661375666" y="79.0" />
-      <point x="399.48564814814824" y="79.0" />
-      <point x="6.3125" y="14.5" />
+    <edge source="loteriaPrimitiva.Loteria" target="periodico.Periodico">
+      <point x="50.60000000000002" y="-115.0" />
+      <point x="397.6" y="468.0" />
+      <point x="358.0" y="468.0" />
+      <point x="358.0" y="193.0" />
+      <point x="378.23571428571427" y="193.0" />
+      <point x="75.0" y="81.5" />
     </edge>
-    <edge source="loteriaPrimitiva.ILoteria" target="periodico.IPeriodico">
-      <point x="21.75" y="-14.5" />
-      <point x="338.5" y="79.0" />
-      <point x="386.86064814814824" y="79.0" />
-      <point x="-6.3125" y="14.5" />
-    </edge>
-    <edge source="main.Main" target="jugador.IJugador">
-      <point x="-10.714285714285722" y="-14.5" />
-      <point x="327.7857142857143" y="306.0" />
-      <point x="262.75" y="306.0" />
-      <point x="262.75" y="158.0" />
-      <point x="261.5" y="158.0" />
-      <point x="0.0" y="14.5" />
-    </edge>
-    <edge source="jugador.IJugador" target="periodico.IPeriodico">
-      <point x="0.0" y="-14.5" />
-      <point x="261.5" y="69.0" />
-      <point x="374.23564814814824" y="69.0" />
-      <point x="-18.9375" y="14.5" />
-    </edge>
-    <edge source="loteriaPrimitiva.Loteria" target="loteriaPrimitiva.ILoteria">
-      <point x="35.0" y="-14.5" />
-      <point x="245.25" y="232.0" />
-      <point x="295.0" y="232.0" />
-      <point x="-21.75" y="14.5" />
+    <edge source="jugador.Jugador" target="periodico.Periodico">
+      <point x="-75.0" y="-115.0" />
+      <point x="111.49999999999994" y="193.0" />
+      <point x="228.2357142857143" y="193.0" />
+      <point x="-75.0" y="81.5" />
     </edge>
     <edge source="main.Main" target="loteriaPrimitiva.Loteria">
-      <point x="-21.428571428571445" y="-14.5" />
-      <point x="317.07142857142856" y="316.0" />
-      <point x="210.25" y="316.0" />
-      <point x="0.0" y="14.5" />
+      <point x="2.8421709430404007E-14" y="-26.0" />
+      <point x="-63.25" y="115.0" />
     </edge>
     <edge source="loteriaPrimitiva.Loteria" target="utils.GeneradorNumeroLoteria">
-      <point x="-35.0" y="-14.5" />
-      <point x="175.25" y="232.0" />
-      <point x="137.25" y="232.0" />
-      <point x="45.75" y="14.5" />
+      <point x="101.19999999999999" y="-115.0" />
+      <point x="448.19999999999993" y="468.0" />
+      <point x="433.0" y="468.0" />
+      <point x="-64.5" y="26.0" />
     </edge>
-    <edge source="jugador.Jugador" target="jugador.IJugador">
-      <point x="-30.0" y="-14.5" />
-      <point x="395.25" y="148.0" />
-      <point x="298.7" y="148.0" />
-      <point x="37.19999999999999" y="14.5" />
-    </edge>
-    <edge source="main.Main" target="periodico.IPeriodico">
-      <point x="21.428571428571445" y="-14.5" />
-      <point x="359.92857142857144" y="316.0" />
-      <point x="480.75" y="316.0" />
-      <point x="480.75" y="59.0" />
-      <point x="424.73564814814824" y="59.0" />
-      <point x="31.5625" y="14.5" />
+    <edge source="loteriaPrimitiva.Loteria" target="jugador.Jugador">
+      <point x="-101.19999999999993" y="-115.0" />
+      <point x="245.80000000000004" y="468.0" />
+      <point x="223.99999999999994" y="468.0" />
+      <point x="37.5" y="115.0" />
     </edge>
     <edge source="main.Main" target="utils.GeneradorNumeroLoteria">
-      <point x="-32.14285714285717" y="-14.5" />
-      <point x="306.35714285714283" y="326.0" />
-      <point x="45.75" y="326.0" />
-      <point x="-45.75" y="14.5" />
+      <point x="47.71428571428572" y="-26.0" />
+      <point x="331.46428571428567" y="753.0" />
+      <point x="562.0" y="753.0" />
+      <point x="64.5" y="26.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="295.0" y="187.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="320.5" y="414.0" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>
