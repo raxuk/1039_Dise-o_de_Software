@@ -1,11 +1,15 @@
 package formas;
 
+import utils.CompositeIterator;
+
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Forma extends FormaComponent {
     private ArrayList<FormaComponent> formas = new ArrayList<>();
     private String nombre;
+    private CompositeIterator iterator;
 
     public Forma(String nombre) {
         super();
@@ -15,7 +19,7 @@ public class Forma extends FormaComponent {
     @Override
     public void dibuja() {
         System.out.println(MessageFormat.format("Forma({0}) {1}", this.nombre, '{'));
-        System.out.print("\t".repeat(//AQUI VA LA PROFUNDIDAD));
+        System.out.print("\t".repeat(1));
         for (FormaComponent forma : formas) {
             forma.dibuja();
         }
@@ -42,5 +46,11 @@ public class Forma extends FormaComponent {
     @Override
     public FormaComponent profundidad(int i) {
         return this.formas.get(i);
+    }
+
+    @Override
+    public CompositeIterator createIterator(){
+        this.iterator = new CompositeIterator(formas.iterator());
+        return this.iterator;
     }
 }
