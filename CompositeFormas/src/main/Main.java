@@ -22,12 +22,12 @@ public class Main {
         // Añade la forma interior a la principal
         formaPrin.anade(formaInt);
         //////////////////////////
-        System.out.println("\nDibujo INICIAL:");
+        System.out.println("\nSalida INICIAL:");
         formaPrin.dibuja();
-        System.out.println("\nDibujo tras desplazar:");
+        System.out.println("\nSalida tras desplazar:");
         formaPrin.desplazaRelativo(100,100);
         formaPrin.dibuja();
-        System.out.println("\nDibujo tras eliminar:");
+        System.out.println("\nSalida tras eliminar:");
         formaInt.elimina(r1);
         formaInt.elimina(r2);
         formaPrin.dibuja();
