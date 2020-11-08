@@ -21,8 +21,10 @@ public abstract class FormaComponent implements Iterable {
         throw new UnsupportedOperationException();
     }
 
-    public FormaComponent profundidad(int i) {
-        throw new UnsupportedOperationException();
+    public int profundidad() {
+
+        return (padre != null) ? (1 + padre.profundidad()) : 0;
+
     }
 
     public CompositeIterator createIterator() {

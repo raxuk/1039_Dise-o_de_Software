@@ -19,10 +19,12 @@ public class Forma extends FormaComponent {
     @Override
     public void dibuja() {
         System.out.println(MessageFormat.format("Forma({0}) {1}", this.nombre, '{'));
-        System.out.print("\t".repeat(1));
         for (FormaComponent forma : formas) {
+            int p = forma.profundidad();
+            System.out.print("\t".repeat(p));
             forma.dibuja();
         }
+        System.out.print("\t".repeat(this.profundidad()));
         System.out.println("}");
     }
 
@@ -35,6 +37,7 @@ public class Forma extends FormaComponent {
 
     @Override
     public void anade(FormaComponent fc) {
+        fc.padre = this;
         this.formas.add(fc);
     }
 
@@ -44,12 +47,7 @@ public class Forma extends FormaComponent {
     }
 
     @Override
-    public FormaComponent profundidad(int i) {
-        return this.formas.get(i);
-    }
-
-    @Override
-    public CompositeIterator createIterator(){
+    public CompositeIterator createIterator() {
         this.iterator = new CompositeIterator(formas.iterator());
         return this.iterator;
     }
