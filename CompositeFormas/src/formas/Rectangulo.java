@@ -1,7 +1,5 @@
 package formas;
 
-import utils.CompositeIterator;
-import utils.NullIterator;
 
 import java.text.MessageFormat;
 
@@ -10,7 +8,6 @@ public class Rectangulo extends FormaComponent {
     private int x2;
     private int y1;
     private int y2;
-    private CompositeIterator iterator;
 
     public Rectangulo(int x1, int y1, int x2, int y2) {
         super();
@@ -33,9 +30,4 @@ public class Rectangulo extends FormaComponent {
         this.y2 += y;
     }
 
-    @Override
-    public CompositeIterator createIterator() {
-        this.iterator = new CompositeIterator(new NullIterator());
-        return this.iterator;
-    }
 }
