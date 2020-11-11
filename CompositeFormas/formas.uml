@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>formas</OriginalElement>
+  <nodes>
+    <node x="224.00000000000003" y="215.0">formas.Forma</node>
+    <node x="493.00000000000006" y="215.0">formas.Rectangulo</node>
+    <node x="283.00694444444446" y="0.0">formas.FormaComponent</node>
+    <node x="386.6319444444444" y="453.0">main.Main</node>
+    <node x="0.0" y="226.0">formas.Circulo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.Main" target="formas.Circulo">
+      <point x="-55.87499999999994" y="-27.0" />
+      <point x="405.25694444444446" y="433.0" />
+      <point x="102.0" y="433.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="formas.Forma" target="formas.FormaComponent">
+      <point x="-83.0" y="-94.0" />
+      <point x="265.5" y="195.0" />
+      <point x="338.00694444444446" y="195.0" />
+      <point x="-55.0" y="82.5" />
+    </edge>
+    <edge source="formas.Rectangulo" target="formas.FormaComponent">
+      <point x="0.0" y="-94.0" />
+      <point x="595.0" y="195.0" />
+      <point x="448.00694444444446" y="195.0" />
+      <point x="55.0" y="82.5" />
+    </edge>
+    <edge source="main.Main" target="formas.Rectangulo">
+      <point x="18.625000000000057" y="-27.0" />
+      <point x="479.75694444444446" y="423.0" />
+      <point x="595.0" y="423.0" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="formas.Circulo" target="formas.FormaComponent">
+      <point x="0.0" y="-83.0" />
+      <point x="102.0" y="185.0" />
+      <point x="301.3402777777778" y="185.0" />
+      <point x="-91.66666666666666" y="82.5" />
+    </edge>
+    <edge source="main.Main" target="formas.Forma">
+      <point x="-18.624999999999943" y="-27.0" />
+      <point x="442.50694444444446" y="423.0" />
+      <point x="348.5" y="423.0" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="main.Main" target="formas.FormaComponent">
+      <point x="55.875000000000064" y="-27.0" />
+      <point x="517.0069444444445" y="433.0" />
+      <point x="707.5" y="433.0" />
+      <point x="707.5" y="185.0" />
+      <point x="484.6736111111111" y="185.0" />
+      <point x="91.66666666666663" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="354.0" y="253.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
