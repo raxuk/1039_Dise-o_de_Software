@@ -16,7 +16,7 @@ public class main {
         cosas.add(new Cuadrado(3, 'o'));
         cosas.add(new Triangulo(5, 't'));
         for (AsciiArt cosa : cosas) {
-            Dibuja(new Marco(new DuplicaHorizontal(cosa), '#'));
+            Dibuja(new Marco(new DuplicaHorizontal(new Marco(cosa, '#')), '@'));
         }
     }
 
@@ -25,6 +25,6 @@ public class main {
         for(String linea : asciiArt.getLineas()){
             System.out.println(linea);
         }
-        System.out.println('\n');
+        System.out.println();
     }
 }

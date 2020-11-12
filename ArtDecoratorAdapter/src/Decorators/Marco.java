@@ -7,7 +7,7 @@ public class Marco extends AsciiArtDecorator {
     private char caracterMarco;
     private AsciiArt asciiArt;
 
-    public Marco(DuplicaHorizontal duplicaHorizontal, char caracterRelleno) {
+    public Marco(AsciiArt duplicaHorizontal, char caracterRelleno) {
         this.asciiArt = duplicaHorizontal;
         this.caracterMarco = caracterRelleno;
 
@@ -29,15 +29,4 @@ public class Marco extends AsciiArtDecorator {
         }
     }
 
-//    @Override
-//    public String dibuja() {
-//        int ancho = this.asciiArt.getAncho() + 2;
-//        int alto = this.asciiArt.getAlto();
-//        String marcoHorizontal = Character.toString(this.caracterMarco).repeat(ancho);
-//        StringBuilder marco = new StringBuilder();
-//        marco.append(marcoHorizontal);
-//        marco.append('\n');
-//        marco.append(asciiArt.dibuja());
-//        return marco.toString();
-//    }
 }
