@@ -1,4 +1,6 @@
-package ASCII;
+package Drawings;
+
+import ASCII.AsciiArt;
 
 public class Cuadrado extends AsciiArt {
 
