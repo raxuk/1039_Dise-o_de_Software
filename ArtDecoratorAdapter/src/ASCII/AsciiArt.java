@@ -4,7 +4,11 @@ public abstract class AsciiArt {
     protected String[] lineas = {"XX", "XX"};
 
     public int getAncho() {
-        return lineas[lineas.length-1].length();
+        int ancho = -1;
+        for(String linea: lineas)
+            ancho = Math.max(ancho, linea.length());
+
+        return ancho;
     }
 
     public int getAlto() {
