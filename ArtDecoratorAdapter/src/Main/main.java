@@ -1,8 +1,10 @@
 package Main;
 
 import ASCII.AsciiArt;
+import ASCII.Cuadrado;
+import ASCII.Triangulo;
 import Adapter.StringArt2AsciiArt;
-import Drawings.*;
+import StringArt.*;
 import Decorators.DuplicaHorizontal;
 import Decorators.Marco;
 

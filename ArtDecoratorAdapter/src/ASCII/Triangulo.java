@@ -1,6 +1,4 @@
-package Drawings;
-
-import ASCII.AsciiArt;
+package ASCII;
 
 public class Triangulo extends AsciiArt {
 

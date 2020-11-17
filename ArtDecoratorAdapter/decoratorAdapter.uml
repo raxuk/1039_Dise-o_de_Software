@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="743.75" y="0.0">ASCII.AsciiArt</node>
+    <node x="949.1404761904763" y="272.0">Decorators.Marco</node>
+    <node x="370.0" y="294.5">StringArt.Rana</node>
+    <node x="836.1404761904763" y="180.0">ASCII.AsciiArtDecorator</node>
+    <node x="222.5" y="168.0">StringArt.StringArt</node>
+    <node x="726.6404761904763" y="283.0">Decorators.DuplicaHorizontal</node>
+    <node x="463.1404761904763" y="451.0">Main.main</node>
+    <node x="624.1023809523812" y="168.0">ASCII.Triangulo</node>
+    <node x="0.0" y="283.0">Adapter.StringArt2AsciiArt</node>
+    <node x="450.10238095238117" y="168.0">ASCII.Cuadrado</node>
+    <node x="222.0" y="294.5">StringArt.Murcielago</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Adapter.StringArt2AsciiArt" target="StringArt.StringArt">
+      <point x="0.0" y="-38.5" />
+      <point x="101.0" y="242.0" />
+      <point x="235.2" y="242.0" />
+      <point x="-50.80000000000001" y="27.0" />
+    </edge>
+    <edge source="Main.main" target="ASCII.Cuadrado">
+      <point x="0.0" y="-60.0" />
+      <point x="543.1404761904763" y="391.0" />
+      <point x="527.1023809523812" y="391.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ASCII.Cuadrado" target="ASCII.AsciiArt">
+      <point x="0.0" y="-27.0" />
+      <point x="527.1023809523812" y="138.0" />
+      <point x="762.4166666666666" y="138.0" />
+      <point x="-37.33333333333337" y="49.0" />
+    </edge>
+    <edge source="Main.main" target="StringArt.StringArt">
+      <point x="-17.77777777777783" y="-60.0" />
+      <point x="525.3626984126985" y="401.0" />
+      <point x="507.5" y="401.0" />
+      <point x="507.5" y="242.0" />
+      <point x="336.8" y="242.0" />
+      <point x="50.80000000000001" y="27.0" />
+    </edge>
+    <edge source="Main.main" target="Adapter.StringArt2AsciiArt">
+      <point x="-71.11111111111109" y="-60.0" />
+      <point x="472.0293650793652" y="431.0" />
+      <point x="101.0" y="431.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="Main.main" target="StringArt.Rana">
+      <point x="-35.55555555555554" y="-60.0" />
+      <point x="507.58492063492076" y="411.0" />
+      <point x="433.5" y="411.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Adapter.StringArt2AsciiArt" target="ASCII.AsciiArt">
+      <point x="-67.33333333333337" y="-38.5" />
+      <point x="33.66666666666663" y="252.0" />
+      <point x="88.62724867724876" y="252.0" />
+      <point x="88.62724867724876" y="128.0" />
+      <point x="749.9722222222222" y="128.0" />
+      <point x="-49.77777777777783" y="49.0" />
+    </edge>
+    <edge source="Decorators.DuplicaHorizontal" target="ASCII.AsciiArtDecorator">
+      <point x="66.0" y="-38.5" />
+      <point x="891.6404761904763" y="252.0" />
+      <point x="882.1404761904763" y="252.0" />
+      <point x="-46.0" y="15.0" />
+    </edge>
+    <edge source="ASCII.AsciiArtDecorator" target="ASCII.AsciiArt">
+      <point x="0.0" y="-15.0" />
+      <point x="928.1404761904763" y="148.0" />
+      <point x="812.1944444444445" y="148.0" />
+      <point x="12.444444444444457" y="49.0" />
+    </edge>
+    <edge source="Main.main" target="Decorators.DuplicaHorizontal">
+      <point x="35.55555555555554" y="-60.0" />
+      <point x="578.6960317460318" y="411.0" />
+      <point x="825.6404761904763" y="411.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="Main.main" target="Decorators.Marco">
+      <point x="53.33333333333337" y="-60.0" />
+      <point x="596.4738095238097" y="421.0" />
+      <point x="1030.6404761904764" y="421.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="ASCII.Triangulo" target="ASCII.AsciiArt">
+      <point x="0.0" y="-27.0" />
+      <point x="700.1023809523812" y="148.0" />
+      <point x="774.8611111111111" y="148.0" />
+      <point x="-24.888888888888914" y="49.0" />
+    </edge>
+    <edge source="Decorators.Marco" target="ASCII.AsciiArtDecorator">
+      <point x="-54.33333333333337" y="-49.5" />
+      <point x="976.3071428571429" y="252.0" />
+      <point x="974.1404761904763" y="252.0" />
+      <point x="46.0" y="15.0" />
+    </edge>
+    <edge source="Main.main" target="ASCII.AsciiArt">
+      <point x="71.11111111111109" y="-60.0" />
+      <point x="614.2515873015874" y="431.0" />
+      <point x="1122.6404761904764" y="431.0" />
+      <point x="1122.6404761904764" y="118.0" />
+      <point x="849.5277777777777" y="118.0" />
+      <point x="49.777777777777715" y="49.0" />
+    </edge>
+    <edge source="Decorators.DuplicaHorizontal" target="ASCII.AsciiArt">
+      <point x="0.0" y="-38.5" />
+      <point x="825.6404761904763" y="252.0" />
+      <point x="803.6023809523812" y="252.0" />
+      <point x="803.6023809523812" y="148.0" />
+      <point x="799.75" y="148.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="Main.main" target="StringArt.Murcielago">
+      <point x="-53.33333333333326" y="-60.0" />
+      <point x="489.80714285714305" y="421.0" />
+      <point x="286.0" y="421.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Decorators.Marco" target="ASCII.AsciiArt">
+      <point x="54.33333333333337" y="-49.5" />
+      <point x="1084.9738095238097" y="252.0" />
+      <point x="1070.2272486772488" y="252.0" />
+      <point x="1070.2272486772488" y="128.0" />
+      <point x="837.0833333333333" y="128.0" />
+      <point x="37.33333333333326" y="49.0" />
+    </edge>
+    <edge source="StringArt.Rana" target="StringArt.StringArt">
+      <point x="0.0" y="-27.0" />
+      <point x="433.5" y="252.0" />
+      <point x="311.4" y="252.0" />
+      <point x="25.399999999999977" y="27.0" />
+    </edge>
+    <edge source="Main.main" target="ASCII.Triangulo">
+      <point x="17.77777777777783" y="-60.0" />
+      <point x="560.9182539682541" y="401.0" />
+      <point x="700.1023809523812" y="401.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="StringArt.Murcielago" target="StringArt.StringArt">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="595.5" y="285.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

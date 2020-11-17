@@ -1,5 +1,3 @@
 package ASCII;
 
-public abstract class AsciiArtDecorator extends AsciiArt {
-
-}
+public abstract class AsciiArtDecorator extends AsciiArt {}

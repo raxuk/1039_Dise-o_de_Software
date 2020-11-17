@@ -1,6 +1,4 @@
-package Drawings;
-
-import ASCII.AsciiArt;
+package ASCII;
 
 public class Cuadrado extends AsciiArt {
 
@@ -11,6 +9,4 @@ public class Cuadrado extends AsciiArt {
             this.lineas[i] = fila;
         }
     }
-
 }
-//        return  Character.toString(this.caracterRelleno).repeat(this.longitud);

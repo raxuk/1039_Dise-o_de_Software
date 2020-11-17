@@ -1,4 +1,4 @@
-package Drawings;
+package StringArt;
 
 import java.util.ArrayList;
 import java.util.List;
